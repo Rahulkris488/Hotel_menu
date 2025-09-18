@@ -40,7 +40,7 @@ def add_item():
 
 @app.route('/edit/<int:item_id>', methods=['GET', 'POST'])
 def edit_item(item_id):
-    """Page to edit an existing menu item."""
+    """Page  toedit an existing menu item."""
     if request.method == 'POST':
         form_data = {
             'name': request.form['name'],
